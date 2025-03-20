@@ -5,7 +5,7 @@ const fs = require('fs').promises;
 const path = require('path');
 
 const app = express();
-const PORT = 5000;
+const PORT = 3000;
 
 // Enable CORS for all routes
 app.use(cors());
@@ -34,11 +34,11 @@ app.get('/api/subsidies', async (req, res) => {
     try {
         // Run the Python scraper
         await runPythonScraper();
-        
+                 
         // Read the generated JSON file
         const data = await fs.readFile(path.join(__dirname, 'schemes_data.json'), 'utf-8');
         const schemes = JSON.parse(data);
-        
+                  
         res.json(schemes);
     } catch (error) {
         console.error('Error fetching subsidy data:', error);
