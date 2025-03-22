@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// import React from 'react';
+// import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
@@ -40,7 +40,7 @@ const LandingPage = () => {
             <a href="#acts" className="py-3 px-6 hover:bg-[#883944] transition">ACT AND RULES</a>
             <a href="#schemes" className="py-3 px-6 hover:bg-[#883944] transition">SCHEMES</a>
             <a href="#links" className="py-3 px-6 hover:bg-[#883944] transition">RELATED LINKS</a>
-            <a href="#register" className="ml-auto py-3 px-6 bg-[#883944] hover:bg-[#9a4450] transition">REGISTER</a>
+            <a href="/register" className="ml-auto py-3 px-6 bg-[#883944] hover:bg-[#9a4450] transition">REGISTER</a>
           </div>
         </div>
       </nav>
@@ -90,21 +90,21 @@ const LandingPage = () => {
             <div className="bg-white p-4 rounded shadow text-center">
               <img src="../assets/shivraj.jpg" alt="Minister" className="w-24 h-24 rounded-full mx-auto mb-4" />
               <h4 className="font-semibold mb-1">Shri Example Name</h4>
-              <p className="text-sm text-gray-600">Hon'ble Minister of Agriculture & Farmers Welfare</p>
+              <p className="text-sm text-gray-600">Hon&apos;ble Minister of Agriculture & Farmers Welfare</p>
             </div>
             
             {/* Minister 2 */}
             <div className="bg-white p-4 rounded shadow text-center">
               <img src="assets/Shri-Bhagirath-Choudhary.jpg" alt="Minister" className="w-24 h-24 rounded-full mx-auto mb-4" />
               <h4 className="font-semibold mb-1">Shri Example Name</h4>
-              <p className="text-sm text-gray-600">Hon'ble Minister of State for Agriculture & Farmers Welfare</p>
+              <p className="text-sm text-gray-600">Hon&apos;ble Minister of State for Agriculture & Farmers Welfare</p>
             </div>
             
             {/* Minister 3 */}
             <div className="bg-white p-4 rounded shadow text-center">
               <img src="assets/Shri-Ram-Nath-Thakur.jpg" alt="Minister" className="w-24 h-24 rounded-full mx-auto mb-4" />
               <h4 className="font-semibold mb-1">Shri Example Name</h4>
-              <p className="text-sm text-gray-600">Hon'ble Minister of State for Agriculture & Farmers Welfare</p>
+              <p className="text-sm text-gray-600">Hon&apos;ble Minister of State for Agriculture & Farmers Welfare</p>
             </div>
           </div>
         </div>
