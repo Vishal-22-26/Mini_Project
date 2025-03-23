@@ -67,7 +67,7 @@ const LandingPage = () => {
               ACT AND RULES
             </a>
             <a
-              href="#schemes"
+              href="/schemes"
               className="py-3 px-6 hover:bg-[#883944] transition"
             >
               SCHEMES

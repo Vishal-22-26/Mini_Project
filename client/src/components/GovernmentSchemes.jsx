@@ -9,7 +9,7 @@ const GovernmentSchemes = () => {
   useEffect(() => {
     const fetchSchemes = async () => {
       try {
-        const response = await fetch('http://localhost:5000/api/subsidies');
+        const response = await fetch('http://localhost:3000/api/subsidies');
         if (!response.ok) {
           throw new Error('Failed to fetch schemes');
         }
