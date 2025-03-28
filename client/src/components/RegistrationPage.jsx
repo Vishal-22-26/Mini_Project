@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const RegistrationForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -19,6 +21,12 @@ const RegistrationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
+    
+    // Save user data to localStorage
+    localStorage.setItem("farmerUserData", JSON.stringify(formData));
+    
+    // Redirect to farmer options page
+    navigate("/farmer-options");
   };
 
   return (
