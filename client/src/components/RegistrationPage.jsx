@@ -17,17 +17,15 @@ const RegistrationForm = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    
-    // Save user data to localStorage
-    localStorage.setItem("farmerUserData", JSON.stringify(formData));
-    
-    // Redirect to farmer options page
-    navigate("/farmer-options");
+  
+    // Redirect to /farmer-option with state in the URL
+    navigate(`/farmer-option?state=${encodeURIComponent(formData.state)}`);
   };
+  
 
   return (
     <div className="flex flex-col w-[100vw] h-full">
