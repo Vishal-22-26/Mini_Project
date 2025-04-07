@@ -9,7 +9,7 @@ function Footer() {
             (item, index) => (
               <a
                 key={index}
-                href={`#${item.toLowerCase().replace(/\s+/g, "")}`}
+                href={`${item.toLowerCase().replace(/\s+/g, "")}`}
                 className="hover:text-white transition-colors duration-300"
               >
                 {item}
